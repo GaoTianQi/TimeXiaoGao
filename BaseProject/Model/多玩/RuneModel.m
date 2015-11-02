@@ -12,26 +12,12 @@
 
 
 + (NSDictionary *)objectClassInArray{
-    return @{@"Purple" : [RunePurpleModel class], @"Yellow" : [RuneYellowModel class], @"Blue" : [RuneBlueModel class], @"Red" : [RunRedModel class]};
+    return @{@"Purple" : [RunePurpleModel class], @"Yellow" : [RunePurpleModel class], @"Blue" : [RunePurpleModel class], @"Red" : [RunePurpleModel class]};
 }
 @end
 @implementation RunePurpleModel
 
 @end
 
-
-@implementation RuneYellowModel
-
-@end
-
-
-@implementation RuneBlueModel
-
-@end
-
-
-@implementation RunRedModel
-
-@end
 
 

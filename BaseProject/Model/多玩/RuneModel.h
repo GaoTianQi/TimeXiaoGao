@@ -8,17 +8,17 @@
 
 #import "BaseModel.h"
 
-@class RunePurpleModel,RuneYellowModel,RuneBlueModel,RunRedModel;
+@class RunePurpleModel;
 @interface RuneModel : BaseModel
 
 
 @property (nonatomic, strong) NSArray<RunePurpleModel *> *Purple;
 
-@property (nonatomic, strong) NSArray<RuneBlueModel *> *Blue;
+@property (nonatomic, strong) NSArray<RunePurpleModel *> *Blue;
 
-@property (nonatomic, strong) NSArray<RuneYellowModel *> *Yellow;
+@property (nonatomic, strong) NSArray<RunePurpleModel *> *Yellow;
 
-@property (nonatomic, strong) NSArray<RunRedModel *> *Red;
+@property (nonatomic, strong) NSArray<RunePurpleModel *> *Red;
 
 
 @end
@@ -54,99 +54,4 @@
 
 @end
 
-@interface RuneYellowModel : NSObject
-
-@property (nonatomic, copy) NSString *Img;
-
-@property (nonatomic, copy) NSString *Name;
-
-@property (nonatomic, copy) NSString *lev3;
-
-@property (nonatomic, copy) NSString *Recom;
-
-@property (nonatomic, copy) NSString *lev2;
-
-@property (nonatomic, assign) NSInteger iplev3;
-
-@property (nonatomic, copy) NSString *Units;
-
-@property (nonatomic, assign) NSInteger Type;
-
-@property (nonatomic, copy) NSString *Standby;
-
-@property (nonatomic, copy) NSString *lev1;
-
-@property (nonatomic, copy) NSString *iplev2;
-
-@property (nonatomic, copy) NSString *Alias;
-
-@property (nonatomic, copy) NSString *Prop;
-
-@property (nonatomic, copy) NSString *iplev1;
-
-@end
-
-@interface RuneBlueModel : NSObject
-
-@property (nonatomic, copy) NSString *Img;
-
-@property (nonatomic, copy) NSString *Name;
-
-@property (nonatomic, copy) NSString *lev3;
-
-@property (nonatomic, copy) NSString *Recom;
-
-@property (nonatomic, copy) NSString *lev2;
-
-@property (nonatomic, assign) NSInteger iplev3;
-
-@property (nonatomic, copy) NSString *Units;
-
-@property (nonatomic, assign) NSInteger Type;
-
-@property (nonatomic, copy) NSString *Standby;
-
-@property (nonatomic, copy) NSString *lev1;
-
-@property (nonatomic, copy) NSString *iplev2;
-
-@property (nonatomic, copy) NSString *Alias;
-
-@property (nonatomic, copy) NSString *Prop;
-
-@property (nonatomic, copy) NSString *iplev1;
-
-@end
-
-@interface RunRedModel : NSObject
-
-@property (nonatomic, copy) NSString *Img;
-
-@property (nonatomic, copy) NSString *Name;
-
-@property (nonatomic, copy) NSString *lev3;
-
-@property (nonatomic, assign) NSInteger Recom;
-
-@property (nonatomic, copy) NSString *lev2;
-
-@property (nonatomic, assign) NSInteger iplev3;
-
-@property (nonatomic, copy) NSString *Units;
-
-@property (nonatomic, assign) NSInteger Type;
-
-@property (nonatomic, copy) NSString *Standby;
-
-@property (nonatomic, copy) NSString *lev1;
-
-@property (nonatomic, copy) NSString *iplev2;
-
-@property (nonatomic, copy) NSString *Alias;
-
-@property (nonatomic, copy) NSString *Prop;
-
-@property (nonatomic, copy) NSString *iplev1;
-
-@end
 
