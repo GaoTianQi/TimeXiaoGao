@@ -8,34 +8,19 @@
 
 #import "BaseModel.h"
 
-@class HeroVideoDetailModel;
 @interface HeroVideoModel : BaseModel
 
-@property (nonatomic, strong) NSArray<HeroVideoDetailModel *> *HeroVideoModel;
+@property (nonatomic, strong) NSString *coverUrl;
+@property (nonatomic, strong) NSString *udb;
+@property (nonatomic, strong) NSString *channelId;
+@property (nonatomic, strong) NSString *uploadTime;
+@property (nonatomic, strong) NSString *vid;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *letvVideoUnique;
+@property (nonatomic, strong) NSString *letvVideoId;
+@property (nonatomic, assign) double videoLength;
+@property (nonatomic, assign) double totalPage;
 
 @end
 
-@interface HeroVideoDetailModel : NSObject
-
-@property (nonatomic, copy) NSString *cover_url;
-
-@property (nonatomic, copy) NSString *udb;
-
-@property (nonatomic, copy) NSString *channelId;
-
-@property (nonatomic, copy) NSString *upload_time;
-
-@property (nonatomic, copy) NSString *vid;
-
-@property (nonatomic, copy) NSString *title;
-
-@property (nonatomic, copy) NSString *letv_video_unique;
-
-@property (nonatomic, copy) NSString *letv_video_id;
-
-@property (nonatomic, assign) NSInteger video_length;
-
-@property (nonatomic, assign) NSInteger totalPage;
-
-@end
 

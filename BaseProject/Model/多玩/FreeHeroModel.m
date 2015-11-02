@@ -10,12 +10,13 @@
 
 @implementation FreeHeroModel
 
-
 + (NSDictionary *)objectClassInArray{
-    return @{@"free" : [FreeModel class]};
+    return @{@"free" : [FreeHeroFreeModel class]};
 }
+
 @end
-@implementation FreeModel
+
+@implementation FreeHeroFreeModel
 
 @end
 

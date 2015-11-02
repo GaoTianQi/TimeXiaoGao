@@ -10,13 +10,13 @@
 
 @implementation AllHeroModel
 
-
 + (NSDictionary *)objectClassInArray{
-    return @{@"all" : [AllModel class]};
+    return @{@"all" : [AllHeroAllModel class]};
 }
+
 @end
 
-@implementation AllModel
+@implementation AllHeroAllModel
 
 @end
 

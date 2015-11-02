@@ -1,14 +1,14 @@
 //
-//  HeroSkinModel.m
+//  ZBItemModel.m
 //  BaseProject
 //
 //  Created by ios－54 on 15/11/2.
 //  Copyright © 2015年 Tarena. All rights reserved.
 //
 
-#import "HeroSkinModel.h"
+#import "ZBItemModel.h"
 
-@implementation HeroSkinModel
+@implementation ZBItemModel
 
 + (NSDictionary *)replacedKeyFromPropertyName
 {
@@ -16,5 +16,3 @@
 }
 
 @end
-
-

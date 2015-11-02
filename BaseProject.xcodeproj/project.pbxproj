@@ -23,13 +23,23 @@
 		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; };
 		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; };
 		93E1CECB1BE7403900EA4CB5 /* TuWanBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CECA1BE7403900EA4CB5 /* TuWanBaseModel.m */; };
-		93E1CED11BE7437400EA4CB5 /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CED01BE7437400EA4CB5 /* FreeHeroModel.m */; };
-		93E1CED41BE7444500EA4CB5 /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CED31BE7444500EA4CB5 /* AllHeroModel.m */; };
-		93E1CED71BE744F600EA4CB5 /* HeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CED61BE744F600EA4CB5 /* HeroModel.m */; };
-		93E1CEDA1BE7479400EA4CB5 /* HeroSkinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CED91BE7479400EA4CB5 /* HeroSkinModel.m */; };
-		93E1CEDD1BE7491100EA4CB5 /* HeroVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEDC1BE7491100EA4CB5 /* HeroVideoModel.m */; };
-		93E1CEE01BE74B2C00EA4CB5 /* HeroEquipmentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEDF1BE74B2C00EA4CB5 /* HeroEquipmentModel.m */; };
-		93E1CEE31BE74FDE00EA4CB5 /* HeroDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEE21BE74FDE00EA4CB5 /* HeroDataModel.m */; };
+		93E1CEE91BE7793400EA4CB5 /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEE81BE7793400EA4CB5 /* FreeHeroModel.m */; };
+		93E1CEEC1BE77A4400EA4CB5 /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEEB1BE77A4400EA4CB5 /* AllHeroModel.m */; };
+		93E1CEEF1BE77B3600EA4CB5 /* HeroSkinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEEE1BE77B3600EA4CB5 /* HeroSkinModel.m */; };
+		93E1CEF21BE77C6E00EA4CB5 /* HeroVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEF11BE77C6E00EA4CB5 /* HeroVideoModel.m */; };
+		93E1CEF51BE77E8800EA4CB5 /* HeroCZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEF41BE77E8800EA4CB5 /* HeroCZModel.m */; };
+		93E1CEF81BE77F5200EA4CB5 /* HeroDetialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEF71BE77F5200EA4CB5 /* HeroDetialModel.m */; };
+		93E1CEFB1BE7830C00EA4CB5 /* HeroGiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEFA1BE7830C00EA4CB5 /* HeroGiftModel.m */; };
+		93E1CEFE1BE7839C00EA4CB5 /* HeroChangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEFD1BE7839C00EA4CB5 /* HeroChangeModel.m */; };
+		93E1CF011BE7848700EA4CB5 /* HeroWeekDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF001BE7848700EA4CB5 /* HeroWeekDataModel.m */; };
+		93E1CF041BE7871D00EA4CB5 /* ToolMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF031BE7871D00EA4CB5 /* ToolMenuModel.m */; };
+		93E1CF071BE7881900EA4CB5 /* ZBCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF061BE7881900EA4CB5 /* ZBCategoryModel.m */; };
+		93E1CF0A1BE7885700EA4CB5 /* ZBItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF091BE7885700EA4CB5 /* ZBItemModel.m */; };
+		93E1CF0D1BE7893600EA4CB5 /* ItemDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF0C1BE7893600EA4CB5 /* ItemDetailModel.m */; };
+		93E1CF101BE78C2200EA4CB5 /* GifiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF0F1BE78C2200EA4CB5 /* GifiModel.m */; };
+		93E1CF131BE78F2400EA4CB5 /* RuneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF121BE78F2400EA4CB5 /* RuneModel.m */; };
+		93E1CF161BE790E600EA4CB5 /* SumAbilityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF151BE790E600EA4CB5 /* SumAbilityModel.m */; };
+		93E1CF191BE7924400EA4CB5 /* BestGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF181BE7924400EA4CB5 /* BestGroupModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,20 +75,40 @@
 		5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E1CEC91BE7403900EA4CB5 /* TuWanBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanBaseModel.h; sourceTree = "<group>"; };
 		93E1CECA1BE7403900EA4CB5 /* TuWanBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanBaseModel.m; sourceTree = "<group>"; };
-		93E1CECF1BE7437400EA4CB5 /* FreeHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeHeroModel.h; sourceTree = "<group>"; };
-		93E1CED01BE7437400EA4CB5 /* FreeHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeHeroModel.m; sourceTree = "<group>"; };
-		93E1CED21BE7444500EA4CB5 /* AllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllHeroModel.h; sourceTree = "<group>"; };
-		93E1CED31BE7444500EA4CB5 /* AllHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllHeroModel.m; sourceTree = "<group>"; };
-		93E1CED51BE744F600EA4CB5 /* HeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroModel.h; sourceTree = "<group>"; };
-		93E1CED61BE744F600EA4CB5 /* HeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroModel.m; sourceTree = "<group>"; };
-		93E1CED81BE7479400EA4CB5 /* HeroSkinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroSkinModel.h; sourceTree = "<group>"; };
-		93E1CED91BE7479400EA4CB5 /* HeroSkinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroSkinModel.m; sourceTree = "<group>"; };
-		93E1CEDB1BE7491100EA4CB5 /* HeroVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroVideoModel.h; sourceTree = "<group>"; };
-		93E1CEDC1BE7491100EA4CB5 /* HeroVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroVideoModel.m; sourceTree = "<group>"; };
-		93E1CEDE1BE74B2C00EA4CB5 /* HeroEquipmentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroEquipmentModel.h; sourceTree = "<group>"; };
-		93E1CEDF1BE74B2C00EA4CB5 /* HeroEquipmentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroEquipmentModel.m; sourceTree = "<group>"; };
-		93E1CEE11BE74FDE00EA4CB5 /* HeroDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDataModel.h; sourceTree = "<group>"; };
-		93E1CEE21BE74FDE00EA4CB5 /* HeroDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDataModel.m; sourceTree = "<group>"; };
+		93E1CEE71BE7793400EA4CB5 /* FreeHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeHeroModel.h; sourceTree = "<group>"; };
+		93E1CEE81BE7793400EA4CB5 /* FreeHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeHeroModel.m; sourceTree = "<group>"; };
+		93E1CEEA1BE77A4400EA4CB5 /* AllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllHeroModel.h; sourceTree = "<group>"; };
+		93E1CEEB1BE77A4400EA4CB5 /* AllHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllHeroModel.m; sourceTree = "<group>"; };
+		93E1CEED1BE77B3600EA4CB5 /* HeroSkinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroSkinModel.h; sourceTree = "<group>"; };
+		93E1CEEE1BE77B3600EA4CB5 /* HeroSkinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroSkinModel.m; sourceTree = "<group>"; };
+		93E1CEF01BE77C6E00EA4CB5 /* HeroVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroVideoModel.h; sourceTree = "<group>"; };
+		93E1CEF11BE77C6E00EA4CB5 /* HeroVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroVideoModel.m; sourceTree = "<group>"; };
+		93E1CEF31BE77E8800EA4CB5 /* HeroCZModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroCZModel.h; sourceTree = "<group>"; };
+		93E1CEF41BE77E8800EA4CB5 /* HeroCZModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroCZModel.m; sourceTree = "<group>"; };
+		93E1CEF61BE77F5200EA4CB5 /* HeroDetialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetialModel.h; sourceTree = "<group>"; };
+		93E1CEF71BE77F5200EA4CB5 /* HeroDetialModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroDetialModel.m; sourceTree = "<group>"; };
+		93E1CEF91BE7830C00EA4CB5 /* HeroGiftModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroGiftModel.h; sourceTree = "<group>"; };
+		93E1CEFA1BE7830C00EA4CB5 /* HeroGiftModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroGiftModel.m; sourceTree = "<group>"; };
+		93E1CEFC1BE7839C00EA4CB5 /* HeroChangeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroChangeModel.h; sourceTree = "<group>"; };
+		93E1CEFD1BE7839C00EA4CB5 /* HeroChangeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroChangeModel.m; sourceTree = "<group>"; };
+		93E1CEFF1BE7848700EA4CB5 /* HeroWeekDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroWeekDataModel.h; sourceTree = "<group>"; };
+		93E1CF001BE7848700EA4CB5 /* HeroWeekDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroWeekDataModel.m; sourceTree = "<group>"; };
+		93E1CF021BE7871D00EA4CB5 /* ToolMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolMenuModel.h; sourceTree = "<group>"; };
+		93E1CF031BE7871D00EA4CB5 /* ToolMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolMenuModel.m; sourceTree = "<group>"; };
+		93E1CF051BE7881900EA4CB5 /* ZBCategoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBCategoryModel.h; sourceTree = "<group>"; };
+		93E1CF061BE7881900EA4CB5 /* ZBCategoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBCategoryModel.m; sourceTree = "<group>"; };
+		93E1CF081BE7885700EA4CB5 /* ZBItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBItemModel.h; sourceTree = "<group>"; };
+		93E1CF091BE7885700EA4CB5 /* ZBItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZBItemModel.m; sourceTree = "<group>"; };
+		93E1CF0B1BE7893600EA4CB5 /* ItemDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDetailModel.h; sourceTree = "<group>"; };
+		93E1CF0C1BE7893600EA4CB5 /* ItemDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDetailModel.m; sourceTree = "<group>"; };
+		93E1CF0E1BE78C2200EA4CB5 /* GifiModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GifiModel.h; sourceTree = "<group>"; };
+		93E1CF0F1BE78C2200EA4CB5 /* GifiModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GifiModel.m; sourceTree = "<group>"; };
+		93E1CF111BE78F2400EA4CB5 /* RuneModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuneModel.h; sourceTree = "<group>"; };
+		93E1CF121BE78F2400EA4CB5 /* RuneModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuneModel.m; sourceTree = "<group>"; };
+		93E1CF141BE790E600EA4CB5 /* SumAbilityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SumAbilityModel.h; sourceTree = "<group>"; };
+		93E1CF151BE790E600EA4CB5 /* SumAbilityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SumAbilityModel.m; sourceTree = "<group>"; };
+		93E1CF171BE7924400EA4CB5 /* BestGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupModel.h; sourceTree = "<group>"; };
+		93E1CF181BE7924400EA4CB5 /* BestGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupModel.m; sourceTree = "<group>"; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,7 +164,6 @@
 				3886C0AF1BD74A4A0014E661 /* Define */,
 				3886C0B01BD74A4A0014E661 /* Model */,
 				3886C0B11BD74A4A0014E661 /* NetManager */,
-				3886C0B71BD74A4A0014E661 /* ViewModel */,
 				3886C0B21BD74A4A0014E661 /* Resource */,
 				3886C0B31BD74A4A0014E661 /* Util */,
 				3886C0B41BD74A4A0014E661 /* Vendor */,
@@ -179,6 +208,7 @@
 		3886C0B11BD74A4A0014E661 /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
+				3886C0B71BD74A4A0014E661 /* ViewModel */,
 				3886C0BC1BD74AFE0014E661 /* BaseNetManager.h */,
 				3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */,
 			);
@@ -233,26 +263,47 @@
 				3886C0B91BD74AE90014E661 /* BaseViewModel.h */,
 				3886C0BA1BD74AE90014E661 /* BaseViewModel.m */,
 			);
-			path = ViewModel;
+			name = ViewModel;
+			path = ../ViewModel;
 			sourceTree = "<group>";
 		};
 		93F85DF91BE734C00042ED08 /* 多玩 */ = {
 			isa = PBXGroup;
 			children = (
-				93E1CED51BE744F600EA4CB5 /* HeroModel.h */,
-				93E1CED61BE744F600EA4CB5 /* HeroModel.m */,
-				93E1CECF1BE7437400EA4CB5 /* FreeHeroModel.h */,
-				93E1CED01BE7437400EA4CB5 /* FreeHeroModel.m */,
-				93E1CED31BE7444500EA4CB5 /* AllHeroModel.m */,
-				93E1CED21BE7444500EA4CB5 /* AllHeroModel.h */,
-				93E1CED81BE7479400EA4CB5 /* HeroSkinModel.h */,
-				93E1CED91BE7479400EA4CB5 /* HeroSkinModel.m */,
-				93E1CEDB1BE7491100EA4CB5 /* HeroVideoModel.h */,
-				93E1CEDC1BE7491100EA4CB5 /* HeroVideoModel.m */,
-				93E1CEDE1BE74B2C00EA4CB5 /* HeroEquipmentModel.h */,
-				93E1CEDF1BE74B2C00EA4CB5 /* HeroEquipmentModel.m */,
-				93E1CEE11BE74FDE00EA4CB5 /* HeroDataModel.h */,
-				93E1CEE21BE74FDE00EA4CB5 /* HeroDataModel.m */,
+				93E1CEE71BE7793400EA4CB5 /* FreeHeroModel.h */,
+				93E1CEE81BE7793400EA4CB5 /* FreeHeroModel.m */,
+				93E1CEEA1BE77A4400EA4CB5 /* AllHeroModel.h */,
+				93E1CEEB1BE77A4400EA4CB5 /* AllHeroModel.m */,
+				93E1CEED1BE77B3600EA4CB5 /* HeroSkinModel.h */,
+				93E1CEEE1BE77B3600EA4CB5 /* HeroSkinModel.m */,
+				93E1CEF01BE77C6E00EA4CB5 /* HeroVideoModel.h */,
+				93E1CEF11BE77C6E00EA4CB5 /* HeroVideoModel.m */,
+				93E1CEF31BE77E8800EA4CB5 /* HeroCZModel.h */,
+				93E1CEF41BE77E8800EA4CB5 /* HeroCZModel.m */,
+				93E1CEF61BE77F5200EA4CB5 /* HeroDetialModel.h */,
+				93E1CEF71BE77F5200EA4CB5 /* HeroDetialModel.m */,
+				93E1CEF91BE7830C00EA4CB5 /* HeroGiftModel.h */,
+				93E1CEFA1BE7830C00EA4CB5 /* HeroGiftModel.m */,
+				93E1CEFC1BE7839C00EA4CB5 /* HeroChangeModel.h */,
+				93E1CEFD1BE7839C00EA4CB5 /* HeroChangeModel.m */,
+				93E1CEFF1BE7848700EA4CB5 /* HeroWeekDataModel.h */,
+				93E1CF001BE7848700EA4CB5 /* HeroWeekDataModel.m */,
+				93E1CF021BE7871D00EA4CB5 /* ToolMenuModel.h */,
+				93E1CF031BE7871D00EA4CB5 /* ToolMenuModel.m */,
+				93E1CF051BE7881900EA4CB5 /* ZBCategoryModel.h */,
+				93E1CF061BE7881900EA4CB5 /* ZBCategoryModel.m */,
+				93E1CF081BE7885700EA4CB5 /* ZBItemModel.h */,
+				93E1CF091BE7885700EA4CB5 /* ZBItemModel.m */,
+				93E1CF0B1BE7893600EA4CB5 /* ItemDetailModel.h */,
+				93E1CF0C1BE7893600EA4CB5 /* ItemDetailModel.m */,
+				93E1CF0E1BE78C2200EA4CB5 /* GifiModel.h */,
+				93E1CF0F1BE78C2200EA4CB5 /* GifiModel.m */,
+				93E1CF111BE78F2400EA4CB5 /* RuneModel.h */,
+				93E1CF121BE78F2400EA4CB5 /* RuneModel.m */,
+				93E1CF141BE790E600EA4CB5 /* SumAbilityModel.h */,
+				93E1CF151BE790E600EA4CB5 /* SumAbilityModel.m */,
+				93E1CF171BE7924400EA4CB5 /* BestGroupModel.h */,
+				93E1CF181BE7924400EA4CB5 /* BestGroupModel.m */,
 			);
 			path = "多玩";
 			sourceTree = "<group>";
@@ -412,24 +463,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93E1CF041BE7871D00EA4CB5 /* ToolMenuModel.m in Sources */,
+				93E1CEFE1BE7839C00EA4CB5 /* HeroChangeModel.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
-				93E1CEE01BE74B2C00EA4CB5 /* HeroEquipmentModel.m in Sources */,
-				93E1CEDD1BE7491100EA4CB5 /* HeroVideoModel.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
+				93E1CF011BE7848700EA4CB5 /* HeroWeekDataModel.m in Sources */,
+				93E1CEEF1BE77B3600EA4CB5 /* HeroSkinModel.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
-				93E1CED41BE7444500EA4CB5 /* AllHeroModel.m in Sources */,
+				93E1CF0D1BE7893600EA4CB5 /* ItemDetailModel.m in Sources */,
+				93E1CF071BE7881900EA4CB5 /* ZBCategoryModel.m in Sources */,
+				93E1CEF51BE77E8800EA4CB5 /* HeroCZModel.m in Sources */,
+				93E1CEEC1BE77A4400EA4CB5 /* AllHeroModel.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
-				93E1CED71BE744F600EA4CB5 /* HeroModel.m in Sources */,
+				93E1CEFB1BE7830C00EA4CB5 /* HeroGiftModel.m in Sources */,
 				3835CFB71BD90E150024CA48 /* ViewController.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
-				93E1CEDA1BE7479400EA4CB5 /* HeroSkinModel.m in Sources */,
 				3886C0981BD748830014E661 /* main.m in Sources */,
+				93E1CEF21BE77C6E00EA4CB5 /* HeroVideoModel.m in Sources */,
+				93E1CF191BE7924400EA4CB5 /* BestGroupModel.m in Sources */,
 				3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */,
 				93E1CECB1BE7403900EA4CB5 /* TuWanBaseModel.m in Sources */,
-				93E1CED11BE7437400EA4CB5 /* FreeHeroModel.m in Sources */,
-				93E1CEE31BE74FDE00EA4CB5 /* HeroDataModel.m in Sources */,
+				93E1CEF81BE77F5200EA4CB5 /* HeroDetialModel.m in Sources */,
+				93E1CF0A1BE7885700EA4CB5 /* ZBItemModel.m in Sources */,
+				93E1CEE91BE7793400EA4CB5 /* FreeHeroModel.m in Sources */,
+				93E1CF101BE78C2200EA4CB5 /* GifiModel.m in Sources */,
+				93E1CF131BE78F2400EA4CB5 /* RuneModel.m in Sources */,
+				93E1CF161BE790E600EA4CB5 /* SumAbilityModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

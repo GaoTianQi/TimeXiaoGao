@@ -1,16 +1,14 @@
 //
-//  BaseModel.m
+//  ItemDetailModel.m
 //  BaseProject
 //
-//  Created by jiyingxin on 15/10/21.
+//  Created by ios－54 on 15/11/2.
 //  Copyright © 2015年 Tarena. All rights reserved.
 //
 
-#import "BaseModel.h"
+#import "ItemDetailModel.h"
 
-@implementation BaseModel
-
-MJCodingImplementation
+@implementation ItemDetailModel
 
 + (NSDictionary *)replacedKeyFromPropertyName
 {
@@ -18,3 +16,8 @@ MJCodingImplementation
 }
 
 @end
+@implementation ZBItemExtattrsModel
+
+@end
+
+
