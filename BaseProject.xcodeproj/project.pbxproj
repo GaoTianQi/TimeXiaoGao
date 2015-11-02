@@ -26,7 +26,6 @@
 		93E1CEE91BE7793400EA4CB5 /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEE81BE7793400EA4CB5 /* FreeHeroModel.m */; };
 		93E1CEEC1BE77A4400EA4CB5 /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEEB1BE77A4400EA4CB5 /* AllHeroModel.m */; };
 		93E1CEEF1BE77B3600EA4CB5 /* HeroSkinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEEE1BE77B3600EA4CB5 /* HeroSkinModel.m */; };
-		93E1CEF21BE77C6E00EA4CB5 /* HeroVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEF11BE77C6E00EA4CB5 /* HeroVideoModel.m */; };
 		93E1CEF51BE77E8800EA4CB5 /* HeroCZModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEF41BE77E8800EA4CB5 /* HeroCZModel.m */; };
 		93E1CEF81BE77F5200EA4CB5 /* HeroDetialModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEF71BE77F5200EA4CB5 /* HeroDetialModel.m */; };
 		93E1CEFB1BE7830C00EA4CB5 /* HeroGiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEFA1BE7830C00EA4CB5 /* HeroGiftModel.m */; };
@@ -40,6 +39,7 @@
 		93E1CF131BE78F2400EA4CB5 /* RuneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF121BE78F2400EA4CB5 /* RuneModel.m */; };
 		93E1CF161BE790E600EA4CB5 /* SumAbilityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF151BE790E600EA4CB5 /* SumAbilityModel.m */; };
 		93E1CF191BE7924400EA4CB5 /* BestGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF181BE7924400EA4CB5 /* BestGroupModel.m */; };
+		93E1CF1D1BE7961100EA4CB5 /* HeroVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF1C1BE7961100EA4CB5 /* HeroVideoModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,7 +82,6 @@
 		93E1CEED1BE77B3600EA4CB5 /* HeroSkinModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroSkinModel.h; sourceTree = "<group>"; };
 		93E1CEEE1BE77B3600EA4CB5 /* HeroSkinModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroSkinModel.m; sourceTree = "<group>"; };
 		93E1CEF01BE77C6E00EA4CB5 /* HeroVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroVideoModel.h; sourceTree = "<group>"; };
-		93E1CEF11BE77C6E00EA4CB5 /* HeroVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroVideoModel.m; sourceTree = "<group>"; };
 		93E1CEF31BE77E8800EA4CB5 /* HeroCZModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroCZModel.h; sourceTree = "<group>"; };
 		93E1CEF41BE77E8800EA4CB5 /* HeroCZModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroCZModel.m; sourceTree = "<group>"; };
 		93E1CEF61BE77F5200EA4CB5 /* HeroDetialModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeroDetialModel.h; sourceTree = "<group>"; };
@@ -109,6 +108,7 @@
 		93E1CF151BE790E600EA4CB5 /* SumAbilityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SumAbilityModel.m; sourceTree = "<group>"; };
 		93E1CF171BE7924400EA4CB5 /* BestGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupModel.h; sourceTree = "<group>"; };
 		93E1CF181BE7924400EA4CB5 /* BestGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupModel.m; sourceTree = "<group>"; };
+		93E1CF1C1BE7961100EA4CB5 /* HeroVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroVideoModel.m; sourceTree = "<group>"; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -277,7 +277,7 @@
 				93E1CEED1BE77B3600EA4CB5 /* HeroSkinModel.h */,
 				93E1CEEE1BE77B3600EA4CB5 /* HeroSkinModel.m */,
 				93E1CEF01BE77C6E00EA4CB5 /* HeroVideoModel.h */,
-				93E1CEF11BE77C6E00EA4CB5 /* HeroVideoModel.m */,
+				93E1CF1C1BE7961100EA4CB5 /* HeroVideoModel.m */,
 				93E1CEF31BE77E8800EA4CB5 /* HeroCZModel.h */,
 				93E1CEF41BE77E8800EA4CB5 /* HeroCZModel.m */,
 				93E1CEF61BE77F5200EA4CB5 /* HeroDetialModel.h */,
@@ -476,12 +476,12 @@
 				93E1CEEC1BE77A4400EA4CB5 /* AllHeroModel.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
 				93E1CEFB1BE7830C00EA4CB5 /* HeroGiftModel.m in Sources */,
+				93E1CF1D1BE7961100EA4CB5 /* HeroVideoModel.m in Sources */,
 				3835CFB71BD90E150024CA48 /* ViewController.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				3886C0981BD748830014E661 /* main.m in Sources */,
-				93E1CEF21BE77C6E00EA4CB5 /* HeroVideoModel.m in Sources */,
 				93E1CF191BE7924400EA4CB5 /* BestGroupModel.m in Sources */,
 				3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */,
 				93E1CECB1BE7403900EA4CB5 /* TuWanBaseModel.m in Sources */,
