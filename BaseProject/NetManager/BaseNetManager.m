@@ -21,6 +21,8 @@ static AFHTTPSessionManager *manager = nil;
     return manager;
 }
 
+
+
 + (id)GET:(NSString *)path parameters:(NSDictionary *)params completionHandler:(void(^)(id responseObj, NSError *error))complete{
     //打印网络请求， DDLog  与  NSLog 功能一样
     DDLogVerbose(@"Request Path: %@, Params:%@", path, params);

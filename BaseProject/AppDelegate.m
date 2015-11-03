@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Category.h"
+#import "DuoWanNetManager.h"
+#import "AllHeroModel.h"
+#import "HeroSkinModel.h"
+#import "HeroVideoModel.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +22,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self initializeWithApplication:application];
-
+    
+    [DuoWanNetManager getHeroVideoOfHeroName:@"Annie" Page:1 CompletionHandle:^(NSArray<HeroVideoModel *> *models, NSError *error) {
+        
+    }];
     return YES;
 }
 

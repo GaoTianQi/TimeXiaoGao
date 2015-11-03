@@ -9,7 +9,7 @@
 #import "BaseModel.h"
 
 @class TuWanDataModel,TuWanDataIndexpicModel,TuWanDataInfochildModel,TuWanDataShowitemModel,Info;
-@interface TuWanBaseModel : BaseModel
+@interface TuWanModel : BaseModel
 
 
 @property (nonatomic, copy) NSString *msg;

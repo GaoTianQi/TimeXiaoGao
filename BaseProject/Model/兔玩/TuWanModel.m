@@ -6,9 +6,9 @@
 //  Copyright © 2015年 Tarena. All rights reserved.
 //
 
-#import "TuWanBaseModel.h"
+#import "TuWanModel.h"
 
-@implementation TuWanBaseModel
+@implementation TuWanModel
 
 @end
 

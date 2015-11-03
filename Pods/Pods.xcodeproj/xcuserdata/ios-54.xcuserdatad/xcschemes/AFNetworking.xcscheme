@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3886C0921BD748830014E661"
+            BuildableName = "BaseProject.app"
+            BlueprintName = "BaseProject"
+            ReferencedContainer = "container:../BaseProject.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -42,15 +51,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "410B25DF16EA5C5B3E2698F74F9625FB"
-            BuildableName = "libAFNetworking.a"
-            BlueprintName = "AFNetworking"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "3886C0921BD748830014E661"
+            BuildableName = "BaseProject.app"
+            BlueprintName = "BaseProject"
+            ReferencedContainer = "container:../BaseProject.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>

@@ -22,7 +22,7 @@
 		3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BA1BD74AE90014E661 /* BaseViewModel.m */; };
 		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; };
 		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; };
-		93E1CECB1BE7403900EA4CB5 /* TuWanBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CECA1BE7403900EA4CB5 /* TuWanBaseModel.m */; };
+		93E1CECB1BE7403900EA4CB5 /* TuWanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CECA1BE7403900EA4CB5 /* TuWanModel.m */; };
 		93E1CEE91BE7793400EA4CB5 /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEE81BE7793400EA4CB5 /* FreeHeroModel.m */; };
 		93E1CEEC1BE77A4400EA4CB5 /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEEB1BE77A4400EA4CB5 /* AllHeroModel.m */; };
 		93E1CEEF1BE77B3600EA4CB5 /* HeroSkinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEEE1BE77B3600EA4CB5 /* HeroSkinModel.m */; };
@@ -40,6 +40,9 @@
 		93E1CF161BE790E600EA4CB5 /* SumAbilityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF151BE790E600EA4CB5 /* SumAbilityModel.m */; };
 		93E1CF191BE7924400EA4CB5 /* BestGroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF181BE7924400EA4CB5 /* BestGroupModel.m */; };
 		93E1CF1D1BE7961100EA4CB5 /* HeroVideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CF1C1BE7961100EA4CB5 /* HeroVideoModel.m */; };
+		93F5166D1BE84900005930D6 /* DuoWanNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F5166C1BE84900005930D6 /* DuoWanNetManager.m */; };
+		93F516701BE84918005930D6 /* TuWanNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F5166F1BE84918005930D6 /* TuWanNetManager.m */; };
+		93F516731BE8492F005930D6 /* XMLYNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F516721BE8492F005930D6 /* XMLYNetManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,8 +76,8 @@
 		3886C0C21BD74B430014E661 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		4329DABFE5AD654FE71597C9 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93E1CEC91BE7403900EA4CB5 /* TuWanBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanBaseModel.h; sourceTree = "<group>"; };
-		93E1CECA1BE7403900EA4CB5 /* TuWanBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanBaseModel.m; sourceTree = "<group>"; };
+		93E1CEC91BE7403900EA4CB5 /* TuWanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanModel.h; sourceTree = "<group>"; };
+		93E1CECA1BE7403900EA4CB5 /* TuWanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanModel.m; sourceTree = "<group>"; };
 		93E1CEE71BE7793400EA4CB5 /* FreeHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeHeroModel.h; sourceTree = "<group>"; };
 		93E1CEE81BE7793400EA4CB5 /* FreeHeroModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreeHeroModel.m; sourceTree = "<group>"; };
 		93E1CEEA1BE77A4400EA4CB5 /* AllHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllHeroModel.h; sourceTree = "<group>"; };
@@ -109,6 +112,12 @@
 		93E1CF171BE7924400EA4CB5 /* BestGroupModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BestGroupModel.h; sourceTree = "<group>"; };
 		93E1CF181BE7924400EA4CB5 /* BestGroupModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BestGroupModel.m; sourceTree = "<group>"; };
 		93E1CF1C1BE7961100EA4CB5 /* HeroVideoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeroVideoModel.m; sourceTree = "<group>"; };
+		93F5166B1BE84900005930D6 /* DuoWanNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuoWanNetManager.h; sourceTree = "<group>"; };
+		93F5166C1BE84900005930D6 /* DuoWanNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuoWanNetManager.m; sourceTree = "<group>"; };
+		93F5166E1BE84918005930D6 /* TuWanNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanNetManager.h; sourceTree = "<group>"; };
+		93F5166F1BE84918005930D6 /* TuWanNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanNetManager.m; sourceTree = "<group>"; };
+		93F516711BE8492F005930D6 /* XMLYNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYNetManager.h; sourceTree = "<group>"; };
+		93F516721BE8492F005930D6 /* XMLYNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYNetManager.m; sourceTree = "<group>"; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +220,12 @@
 				3886C0B71BD74A4A0014E661 /* ViewModel */,
 				3886C0BC1BD74AFE0014E661 /* BaseNetManager.h */,
 				3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */,
+				93F5166B1BE84900005930D6 /* DuoWanNetManager.h */,
+				93F5166C1BE84900005930D6 /* DuoWanNetManager.m */,
+				93F5166E1BE84918005930D6 /* TuWanNetManager.h */,
+				93F5166F1BE84918005930D6 /* TuWanNetManager.m */,
+				93F516711BE8492F005930D6 /* XMLYNetManager.h */,
+				93F516721BE8492F005930D6 /* XMLYNetManager.m */,
 			);
 			path = NetManager;
 			sourceTree = "<group>";
@@ -311,8 +326,8 @@
 		93F85DFA1BE734C00042ED08 /* 兔玩 */ = {
 			isa = PBXGroup;
 			children = (
-				93E1CEC91BE7403900EA4CB5 /* TuWanBaseModel.h */,
-				93E1CECA1BE7403900EA4CB5 /* TuWanBaseModel.m */,
+				93E1CEC91BE7403900EA4CB5 /* TuWanModel.h */,
+				93E1CECA1BE7403900EA4CB5 /* TuWanModel.m */,
 			);
 			path = "兔玩";
 			sourceTree = "<group>";
@@ -466,9 +481,11 @@
 				93E1CF041BE7871D00EA4CB5 /* ToolMenuModel.m in Sources */,
 				93E1CEFE1BE7839C00EA4CB5 /* HeroChangeModel.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
+				93F5166D1BE84900005930D6 /* DuoWanNetManager.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
 				93E1CF011BE7848700EA4CB5 /* HeroWeekDataModel.m in Sources */,
 				93E1CEEF1BE77B3600EA4CB5 /* HeroSkinModel.m in Sources */,
+				93F516701BE84918005930D6 /* TuWanNetManager.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				93E1CF0D1BE7893600EA4CB5 /* ItemDetailModel.m in Sources */,
 				93E1CF071BE7881900EA4CB5 /* ZBCategoryModel.m in Sources */,
@@ -480,11 +497,12 @@
 				3835CFB71BD90E150024CA48 /* ViewController.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
+				93F516731BE8492F005930D6 /* XMLYNetManager.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				3886C0981BD748830014E661 /* main.m in Sources */,
 				93E1CF191BE7924400EA4CB5 /* BestGroupModel.m in Sources */,
 				3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */,
-				93E1CECB1BE7403900EA4CB5 /* TuWanBaseModel.m in Sources */,
+				93E1CECB1BE7403900EA4CB5 /* TuWanModel.m in Sources */,
 				93E1CEF81BE77F5200EA4CB5 /* HeroDetialModel.m in Sources */,
 				93E1CF0A1BE7885700EA4CB5 /* ZBItemModel.m in Sources */,
 				93E1CEE91BE7793400EA4CB5 /* FreeHeroModel.m in Sources */,
