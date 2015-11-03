@@ -43,6 +43,8 @@
 		93F5166D1BE84900005930D6 /* DuoWanNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F5166C1BE84900005930D6 /* DuoWanNetManager.m */; };
 		93F516701BE84918005930D6 /* TuWanNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F5166F1BE84918005930D6 /* TuWanNetManager.m */; };
 		93F516731BE8492F005930D6 /* XMLYNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F516721BE8492F005930D6 /* XMLYNetManager.m */; };
+		93F516771BE8C10C005930D6 /* RankingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F516761BE8C10C005930D6 /* RankingModel.m */; };
+		93F5167D1BE8C3BB005930D6 /* AlbumModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F5167C1BE8C3BB005930D6 /* AlbumModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +120,12 @@
 		93F5166F1BE84918005930D6 /* TuWanNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanNetManager.m; sourceTree = "<group>"; };
 		93F516711BE8492F005930D6 /* XMLYNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYNetManager.h; sourceTree = "<group>"; };
 		93F516721BE8492F005930D6 /* XMLYNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYNetManager.m; sourceTree = "<group>"; };
+		93F516741BE8C084005930D6 /* DuoWanModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DuoWanModel.h; sourceTree = "<group>"; };
+		93F516751BE8C10C005930D6 /* RankingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RankingModel.h; path = "BaseProject/Model/多玩/RankingModel.h"; sourceTree = SOURCE_ROOT; };
+		93F516761BE8C10C005930D6 /* RankingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RankingModel.m; path = "BaseProject/Model/多玩/RankingModel.m"; sourceTree = SOURCE_ROOT; };
+		93F5167B1BE8C3BB005930D6 /* AlbumModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlbumModel.h; path = "BaseProject/Model/多玩/AlbumModel.h"; sourceTree = SOURCE_ROOT; };
+		93F5167C1BE8C3BB005930D6 /* AlbumModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlbumModel.m; path = "BaseProject/Model/多玩/AlbumModel.m"; sourceTree = SOURCE_ROOT; };
+		93F5167E1BE8C52C005930D6 /* XMLYModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XMLYModel.h; path = "BaseProject/Model/多玩/XMLYModel.h"; sourceTree = SOURCE_ROOT; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +181,7 @@
 				3886C0AF1BD74A4A0014E661 /* Define */,
 				3886C0B01BD74A4A0014E661 /* Model */,
 				3886C0B11BD74A4A0014E661 /* NetManager */,
+				3886C0B71BD74A4A0014E661 /* ViewModel */,
 				3886C0B21BD74A4A0014E661 /* Resource */,
 				3886C0B31BD74A4A0014E661 /* Util */,
 				3886C0B41BD74A4A0014E661 /* Vendor */,
@@ -217,7 +226,6 @@
 		3886C0B11BD74A4A0014E661 /* NetManager */ = {
 			isa = PBXGroup;
 			children = (
-				3886C0B71BD74A4A0014E661 /* ViewModel */,
 				3886C0BC1BD74AFE0014E661 /* BaseNetManager.h */,
 				3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */,
 				93F5166B1BE84900005930D6 /* DuoWanNetManager.h */,
@@ -278,8 +286,7 @@
 				3886C0B91BD74AE90014E661 /* BaseViewModel.h */,
 				3886C0BA1BD74AE90014E661 /* BaseViewModel.m */,
 			);
-			name = ViewModel;
-			path = ../ViewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		93F85DF91BE734C00042ED08 /* 多玩 */ = {
@@ -319,6 +326,7 @@
 				93E1CF151BE790E600EA4CB5 /* SumAbilityModel.m */,
 				93E1CF171BE7924400EA4CB5 /* BestGroupModel.h */,
 				93E1CF181BE7924400EA4CB5 /* BestGroupModel.m */,
+				93F516741BE8C084005930D6 /* DuoWanModel.h */,
 			);
 			path = "多玩";
 			sourceTree = "<group>";
@@ -335,6 +343,11 @@
 		93F85DFB1BE734C00042ED08 /* 喜马拉雅 */ = {
 			isa = PBXGroup;
 			children = (
+				93F516751BE8C10C005930D6 /* RankingModel.h */,
+				93F516761BE8C10C005930D6 /* RankingModel.m */,
+				93F5167B1BE8C3BB005930D6 /* AlbumModel.h */,
+				93F5167C1BE8C3BB005930D6 /* AlbumModel.m */,
+				93F5167E1BE8C52C005930D6 /* XMLYModel.h */,
 			);
 			path = "喜马拉雅";
 			sourceTree = "<group>";
@@ -482,6 +495,7 @@
 				93E1CEFE1BE7839C00EA4CB5 /* HeroChangeModel.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
 				93F5166D1BE84900005930D6 /* DuoWanNetManager.m in Sources */,
+				93F516771BE8C10C005930D6 /* RankingModel.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
 				93E1CF011BE7848700EA4CB5 /* HeroWeekDataModel.m in Sources */,
 				93E1CEEF1BE77B3600EA4CB5 /* HeroSkinModel.m in Sources */,
@@ -506,6 +520,7 @@
 				93E1CEF81BE77F5200EA4CB5 /* HeroDetialModel.m in Sources */,
 				93E1CF0A1BE7885700EA4CB5 /* ZBItemModel.m in Sources */,
 				93E1CEE91BE7793400EA4CB5 /* FreeHeroModel.m in Sources */,
+				93F5167D1BE8C3BB005930D6 /* AlbumModel.m in Sources */,
 				93E1CF101BE78C2200EA4CB5 /* GifiModel.m in Sources */,
 				93E1CF131BE78F2400EA4CB5 /* RuneModel.m in Sources */,
 				93E1CF161BE790E600EA4CB5 /* SumAbilityModel.m in Sources */,

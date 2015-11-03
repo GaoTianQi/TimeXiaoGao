@@ -8,10 +8,8 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Category.h"
-#import "DuoWanNetManager.h"
-#import "AllHeroModel.h"
-#import "HeroSkinModel.h"
-#import "HeroVideoModel.h"
+#import "XMLYNetManager.h"
+#import "XMLYModel.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +21,7 @@
     // Override point for customization after application launch.
     [self initializeWithApplication:application];
     
-    [DuoWanNetManager getHeroVideoOfHeroName:@"Annie" Page:1 CompletionHandle:^(NSArray<HeroVideoModel *> *models, NSError *error) {
+    [XMLYNetManager getRankingListOfPageId:1 CompletionHandle:^(RankingModel *model, NSError *error) {
         
     }];
     return YES;
