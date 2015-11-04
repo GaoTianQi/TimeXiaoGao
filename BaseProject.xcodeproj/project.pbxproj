@@ -12,7 +12,6 @@
 		3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4C1BD758F10046C8C8 /* NSObject+Common.m */; };
 		3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4E1BD758F10046C8C8 /* NSString+PJR.m */; };
 		3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE501BD758F10046C8C8 /* NSString+QRCode.m */; };
-		3835CFB71BD90E150024CA48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3835CFB61BD90E150024CA48 /* ViewController.m */; };
 		3879FE811BDFA8E100A99990 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3879FE801BDFA8E100A99990 /* libsqlite3.0.tbd */; };
 		3886C0981BD748830014E661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0971BD748830014E661 /* main.m */; };
 		3886C09B1BD748830014E661 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C09A1BD748830014E661 /* AppDelegate.m */; };
@@ -22,6 +21,9 @@
 		3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BA1BD74AE90014E661 /* BaseViewModel.m */; };
 		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; };
 		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; };
+		9352A1CC1BE997D600B616C2 /* XMLYRankingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9352A1CB1BE997D600B616C2 /* XMLYRankingViewModel.m */; };
+		9352A1DC1BE9D57000B616C2 /* RankingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9352A1DB1BE9D57000B616C2 /* RankingCell.m */; };
+		9352A1E21BE9D62700B616C2 /* XMLYRankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9352A1E11BE9D62700B616C2 /* XMLYRankingViewController.m */; };
 		93E1CECB1BE7403900EA4CB5 /* TuWanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CECA1BE7403900EA4CB5 /* TuWanModel.m */; };
 		93E1CEE91BE7793400EA4CB5 /* FreeHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEE81BE7793400EA4CB5 /* FreeHeroModel.m */; };
 		93E1CEEC1BE77A4400EA4CB5 /* AllHeroModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E1CEEB1BE77A4400EA4CB5 /* AllHeroModel.m */; };
@@ -56,8 +58,6 @@
 		3804CE4E1BD758F10046C8C8 /* NSString+PJR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PJR.m"; sourceTree = "<group>"; };
 		3804CE4F1BD758F10046C8C8 /* NSString+QRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+QRCode.h"; sourceTree = "<group>"; };
 		3804CE501BD758F10046C8C8 /* NSString+QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+QRCode.m"; sourceTree = "<group>"; };
-		3835CFB51BD90E150024CA48 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		3835CFB61BD90E150024CA48 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3879FE801BDFA8E100A99990 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		3879FE9D1BDFDD2400A99990 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		3886C0931BD748830014E661 /* BaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +78,12 @@
 		3886C0C21BD74B430014E661 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		4329DABFE5AD654FE71597C9 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9352A1CA1BE997D600B616C2 /* XMLYRankingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYRankingViewModel.h; sourceTree = "<group>"; };
+		9352A1CB1BE997D600B616C2 /* XMLYRankingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYRankingViewModel.m; sourceTree = "<group>"; };
+		9352A1DA1BE9D57000B616C2 /* RankingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingCell.h; sourceTree = "<group>"; };
+		9352A1DB1BE9D57000B616C2 /* RankingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingCell.m; sourceTree = "<group>"; };
+		9352A1E01BE9D62700B616C2 /* XMLYRankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLYRankingViewController.h; sourceTree = "<group>"; };
+		9352A1E11BE9D62700B616C2 /* XMLYRankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLYRankingViewController.m; sourceTree = "<group>"; };
 		93E1CEC91BE7403900EA4CB5 /* TuWanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuWanModel.h; sourceTree = "<group>"; };
 		93E1CECA1BE7403900EA4CB5 /* TuWanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TuWanModel.m; sourceTree = "<group>"; };
 		93E1CEE71BE7793400EA4CB5 /* FreeHeroModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeHeroModel.h; sourceTree = "<group>"; };
@@ -182,11 +188,11 @@
 				3886C0B01BD74A4A0014E661 /* Model */,
 				3886C0B11BD74A4A0014E661 /* NetManager */,
 				3886C0B71BD74A4A0014E661 /* ViewModel */,
+				3886C0B61BD74A4A0014E661 /* ViewController */,
+				9352A1D31BE9D41D00B616C2 /* View */,
 				3886C0B21BD74A4A0014E661 /* Resource */,
 				3886C0B31BD74A4A0014E661 /* Util */,
 				3886C0B41BD74A4A0014E661 /* Vendor */,
-				3886C0B51BD74A4A0014E661 /* View */,
-				3886C0B61BD74A4A0014E661 /* ViewController */,
 				3886C0991BD748830014E661 /* AppDelegate.h */,
 				3886C09A1BD748830014E661 /* AppDelegate.m */,
 				3886C0961BD748830014E661 /* Supporting Files */,
@@ -264,18 +270,12 @@
 			path = Vendor;
 			sourceTree = "<group>";
 		};
-		3886C0B51BD74A4A0014E661 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		3886C0B61BD74A4A0014E661 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				3835CFB51BD90E150024CA48 /* ViewController.h */,
-				3835CFB61BD90E150024CA48 /* ViewController.m */,
+				9352A1DD1BE9D5CD00B616C2 /* DuoWanViewController */,
+				9352A1DE1BE9D5CD00B616C2 /* TuWanViewController */,
+				9352A1DF1BE9D5CD00B616C2 /* XMLYViewController */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -285,8 +285,70 @@
 			children = (
 				3886C0B91BD74AE90014E661 /* BaseViewModel.h */,
 				3886C0BA1BD74AE90014E661 /* BaseViewModel.m */,
+				9352A1CA1BE997D600B616C2 /* XMLYRankingViewModel.h */,
+				9352A1CB1BE997D600B616C2 /* XMLYRankingViewModel.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9352A1D31BE9D41D00B616C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9352A1D81BE9D51000B616C2 /* DuoWanView */,
+				9352A1D91BE9D51000B616C2 /* TuWanView */,
+				9352A1D71BE9D4DE00B616C2 /* XMLYView */,
+			);
+			name = View;
+			path = ViewController/View;
+			sourceTree = "<group>";
+		};
+		9352A1D71BE9D4DE00B616C2 /* XMLYView */ = {
+			isa = PBXGroup;
+			children = (
+				9352A1DA1BE9D57000B616C2 /* RankingCell.h */,
+				9352A1DB1BE9D57000B616C2 /* RankingCell.m */,
+			);
+			name = XMLYView;
+			path = BaseProject/View/XMLYView;
+			sourceTree = SOURCE_ROOT;
+		};
+		9352A1D81BE9D51000B616C2 /* DuoWanView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DuoWanView;
+			path = BaseProject/View/DuoWanView;
+			sourceTree = SOURCE_ROOT;
+		};
+		9352A1D91BE9D51000B616C2 /* TuWanView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TuWanView;
+			path = BaseProject/View/TuWanView;
+			sourceTree = SOURCE_ROOT;
+		};
+		9352A1DD1BE9D5CD00B616C2 /* DuoWanViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DuoWanViewController;
+			sourceTree = "<group>";
+		};
+		9352A1DE1BE9D5CD00B616C2 /* TuWanViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TuWanViewController;
+			sourceTree = "<group>";
+		};
+		9352A1DF1BE9D5CD00B616C2 /* XMLYViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9352A1E01BE9D62700B616C2 /* XMLYRankingViewController.h */,
+				9352A1E11BE9D62700B616C2 /* XMLYRankingViewController.m */,
+			);
+			path = XMLYViewController;
 			sourceTree = "<group>";
 		};
 		93F85DF91BE734C00042ED08 /* 多玩 */ = {
@@ -493,6 +555,7 @@
 			files = (
 				93E1CF041BE7871D00EA4CB5 /* ToolMenuModel.m in Sources */,
 				93E1CEFE1BE7839C00EA4CB5 /* HeroChangeModel.m in Sources */,
+				9352A1DC1BE9D57000B616C2 /* RankingCell.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
 				93F5166D1BE84900005930D6 /* DuoWanNetManager.m in Sources */,
 				93F516771BE8C10C005930D6 /* RankingModel.m in Sources */,
@@ -503,12 +566,12 @@
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				93E1CF0D1BE7893600EA4CB5 /* ItemDetailModel.m in Sources */,
 				93E1CF071BE7881900EA4CB5 /* ZBCategoryModel.m in Sources */,
+				9352A1CC1BE997D600B616C2 /* XMLYRankingViewModel.m in Sources */,
 				93E1CEF51BE77E8800EA4CB5 /* HeroCZModel.m in Sources */,
 				93E1CEEC1BE77A4400EA4CB5 /* AllHeroModel.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
 				93E1CEFB1BE7830C00EA4CB5 /* HeroGiftModel.m in Sources */,
 				93E1CF1D1BE7961100EA4CB5 /* HeroVideoModel.m in Sources */,
-				3835CFB71BD90E150024CA48 /* ViewController.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				93F516731BE8492F005930D6 /* XMLYNetManager.m in Sources */,
@@ -519,6 +582,7 @@
 				93E1CECB1BE7403900EA4CB5 /* TuWanModel.m in Sources */,
 				93E1CEF81BE77F5200EA4CB5 /* HeroDetialModel.m in Sources */,
 				93E1CF0A1BE7885700EA4CB5 /* ZBItemModel.m in Sources */,
+				9352A1E21BE9D62700B616C2 /* XMLYRankingViewController.m in Sources */,
 				93E1CEE91BE7793400EA4CB5 /* FreeHeroModel.m in Sources */,
 				93F5167D1BE8C3BB005930D6 /* AlbumModel.m in Sources */,
 				93E1CF101BE78C2200EA4CB5 /* GifiModel.m in Sources */,
