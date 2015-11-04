@@ -43,7 +43,7 @@
  *
  *  @return 当前请求的任务
  */
-+ (id)getHeroSkinOfHeroName:(NSString *)name CompletionHandle:(void(^)(NSArray <HeroSkinModel*> *models, NSError *error))completionHandle;
++ (id)getHeroSkinOfHeroName:(NSString *)enName CompletionHandle:(void(^)(NSArray <HeroSkinModel*> *models, NSError *error))completionHandle;
 
 /**
  *  获取英雄相关的视频列表
@@ -55,7 +55,7 @@
  *
  *  @return 当前请求的任务
  */
-+ (id)getHeroVideoOfHeroName:(NSString *)name Page:(NSInteger)page CompletionHandle:(void(^)(NSArray<HeroVideoModel *> *models, NSError *error))completionHandle;
++ (id)getHeroVideoOfHeroName:(NSString *)enName Page:(NSInteger)page CompletionHandle:(void(^)(NSArray<HeroVideoModel *> *models, NSError *error))completionHandle;
 
 /**
  *  获取英雄出装列表
@@ -67,7 +67,7 @@
  *
  *  @return 当前请求的任务
  */
-+ (id)getHeroCZOfHeroName:(NSString *)name CompletionHandle:(void(^)(NSArray<HeroCZModel *> *models, NSError *error))completionHandle;
++ (id)getHeroCZOfHeroName:(NSString *)enName CompletionHandle:(void(^)(NSArray<HeroCZModel *> *models, NSError *error))completionHandle;
 
 /**
  *  获取英雄资料列表

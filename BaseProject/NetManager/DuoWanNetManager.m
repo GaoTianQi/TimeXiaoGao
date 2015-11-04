@@ -49,50 +49,50 @@
     }];
 }
 // 英雄皮肤
-+ (id)getHeroSkinOfHeroName:(NSString *)name CompletionHandle:(void (^)(NSArray<HeroSkinModel *> *, NSError *))completionHandle
++ (id)getHeroSkinOfHeroName:(NSString *)enName CompletionHandle:(void (^)(NSArray<HeroSkinModel *> *, NSError *))completionHandle
 {
-    NSDictionary *params = @{@"hero":name, kV, kOSType, kVersionName};
+    NSDictionary *params = @{@"hero":enName, kV, kOSType, kVersionName};
     return [DuoWanNetManager GET:kHeroSkinPath parameters:params completionHandler:^(id responseObj, NSError *error) {
         completionHandle([HeroSkinModel objectArrayWithKeyValuesArray:responseObj], error);
     }];
 }
 // 英雄视频
-+ (id)getHeroVideoOfHeroName:(NSString *)name Page:(NSInteger)page CompletionHandle:(void (^)(NSArray<HeroVideoModel *> *, NSError *))completionHandle
++ (id)getHeroVideoOfHeroName:(NSString *)enName Page:(NSInteger)page CompletionHandle:(void (^)(NSArray<HeroVideoModel *> *, NSError *))completionHandle
 {
-    NSDictionary *params = @{@"action":@"l", @"p":@(page), kV, kOSType, @"tag":name, @"src":@"letv"};
+    NSDictionary *params = @{@"action":@"l", @"p":@(page), kV, kOSType, @"tag":enName, @"src":@"letv"};
     return [DuoWanNetManager GET:kHeroVideoPath parameters:params completionHandler:^(id responseObj, NSError *error) {
         completionHandle([HeroVideoModel objectArrayWithKeyValuesArray:responseObj], error);
     }];
     
 }
 // 英雄出装
-+ (id)getHeroCZOfHeroName:(NSString *)name CompletionHandle:(void (^)(NSArray<HeroCZModel *> *, NSError *))completionHandle
++ (id)getHeroCZOfHeroName:(NSString *)enName CompletionHandle:(void (^)(NSArray<HeroCZModel *> *, NSError *))completionHandle
 {
-    NSDictionary *params = @{kV, kOSType, @"championName":name, @"limit":@7};
+    NSDictionary *params = @{kV, kOSType, @"championName":enName, @"limit":@7};
     return [DuoWanNetManager GET:kHeroCZPath parameters:params completionHandler:^(id responseObj, NSError *error) {
         completionHandle([HeroCZModel objectArrayWithKeyValuesArray:responseObj], error);
     }];
 }
 // 英雄资料
-+ (id)getHeroDetailOfName:(NSString *)name CompletionHandle:(void(^)(HeroDetialModel *model, NSError *error))completionHandle
++ (id)getHeroDetailOfName:(NSString *)enName CompletionHandle:(void (^)(HeroDetialModel *, NSError *))completionHandle
 {
-    NSDictionary *params = @{kOSType, @"heroName":name, kV};
+    NSDictionary *params = @{kOSType, @"heroName":enName, kV};
     return [DuoWanNetManager  GET:kHeroDetailPath parameters:params completionHandler:^(id responseObj, NSError *error) {
         completionHandle([HeroDetialModel objectWithKeyValues:responseObj], error);
     }];
 }
 // 天赋符文
-+ (id)getHeroGiftOfName:(NSString *)name CompletionHandle:(void (^)(NSArray<HeroGiftModel *> *, NSError *))completionHandle
++ (id)getHeroGiftOfName:(NSString *)enName CompletionHandle:(void (^)(NSArray<HeroGiftModel *> *, NSError *))completionHandle
 {
-    NSDictionary *params = @{@"hero":name, kV, kOSType};
+    NSDictionary *params = @{@"hero":enName, kV, kOSType};
     return [DuoWanNetManager GET:kHeroGiftPath parameters:params completionHandler:^(id responseObj, NSError *error) {
         completionHandle([HeroGiftModel objectArrayWithKeyValuesArray:responseObj], error);
     }];
 }
 // 英雄改动
-+ (id)getHeroChangeOfName:(NSString *)name CompletionHandle:(void(^)(HeroChangeModel *model, NSError *error))completionHandle
++ (id)getHeroChangeOfName:(NSString *)enName CompletionHandle:(void (^)(HeroChangeModel *, NSError *))completionHandle
 {
-    NSDictionary *params = @{@"name":name, kV, kOSType};
+    NSDictionary *params = @{@"name":enName, kV, kOSType};
     return [DuoWanNetManager GET:kHeroChangePath parameters:params completionHandler:^(id responseObj, NSError *error) {
         completionHandle([HeroChangeModel objectWithKeyValues:responseObj], error);
     }];
