@@ -9,74 +9,88 @@
 #import "TuWanNetManager.h"
 
 // 很多具有共同特点的数据，可以统一宏定义，比如
-#define kAppver @"appver=2.1"
-#define kAppId  @"appid=1"
-#define TuWanTouTiao @"http://cache.tuwan.com/app/?appid=1&classmore=indexpic&appid=1&appver=2.1&start=11"
-#define TuWanDujia @"http://cache.tuwan.com/app/?appid=1&class=heronews&mod=八卦&appid=1&appver=2.1&start=11"
-#define TuWanAnHei3 @"http://cache.tuwan.com/app/?appid=1&dtid=83623&classmore=indexpic&appid=1&appver=2.1&start=11"
-#define TuWanMoShou @"http://cache.tuwan.com/app/?appid=1&dtid=31537&classmore=indexpic&appid=1&appver=2.1&start=11"
-#define TuWanFengBao @"http://cache.tuwan.com/app/?appid=1&dtid=31538&classmore=indexpic&appid=1&appver=2.1&start=11"
-#define TuWanLushi @"http://cache.tuwan.com/app/?appid=1&dtid=31528&classmore=indexpic&appid=1&appver=2.1"
-// .....
-#define TuWanQuWen @"http://cache.tuwan.com/app/?appid=1&dtid=0&class=heronews&mod=趣闻&classmore=indexpic&appid=1&appver=2.1"
-#define TuWanCOS @"http://cache.tuwan.com/app/?appid=1&class=cos&mod=cos&classmore=indexpic&dtid=0&appid=1&appver=2.1"
+#define kAppId  @"appid":@1
+#define kAppver @"appver":@"2.1"
+#define kClassMore @"classmore":@"indexpic"
+
+// 定义宏，用于向可变数组中添加/删除元素（为防止服务器传输键值发生变化）
+#define kRemoveClassMore(dic)    [dic removeObjectForKey:@"classmore"]
+#define kSetDtId(string, dic)    [dic setObject:string forKey:@"dtid"]
+#define kSetClass(string, dic)   [dic setObject:string forKey:@"class"]
+#define kSetMod(string, dic)     [dic setObject:string forKey:@"mod"]
+
+#define kTuWanPath @"http://cache.tuwan.com/app/"
+
 
 @implementation TuWanNetManager
 
-+ (id)getTuWanDataType:(TuWanDataType)type start:(NSNumber *)start CompletionHandle:(void (^)(TuWanModel *, NSError *))completionHandle
++ (id)getTuWanDataType:(TuWanDataType)type start:(NSInteger)start CompletionHandle:(void (^)(TuWanModel *, NSError *))completionHandle
 {
-    NSString *path = nil;
+    /**
+     *  把所有接口共有的参数放到switch外面
+     */
+    NSMutableDictionary *params = [NSMutableDictionary dictionaryWithDictionary:@{kAppId, kAppver, kClassMore, @"start":@(start)}];
     
     switch (type) {
         case TuWanDataTypeDefault:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&classmore=indexpic&appid=1&%@&start=%@", kAppver, start];
             break;
         case TuWanDataTypeAnHei3:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&dtid=83623&classmore=indexpic&appid=1&%@&start=%@",kAppver, start];
+            kSetDtId(@"83623", params);
             break;
         case TuWanDataTypeDuJia:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&class=heronews&mod=八卦&appid=1&%@&start=%@",kAppver, start];
+            kSetMod(@"八卦", params);
             break;
         case TuWanDataTypeFengBao:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&dtid=31538&classmore=indexpic&appid=1&%@&start=%@",kAppver, start];
+            kSetDtId(@"31538", params);
             break;
-        case TuWanDataTypeGuide:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&type=guide&dtid=83623,31528,31537,31538,57067,91821&appid=1&%@",kAppver];
+        case TuWanDataTypeGuide: //攻略，视频，图片只有type不同
+        case TuWanDataTypeVideo:
+        case TuWanDataTypePicture:
+            if (type == TuWanDataTypePicture) [params setObject:@"pic" forKey:@"type"];
+            if (type == TuWanDataTypeVideo) [params setObject:@"video" forKey:@"type"];
+            if (type == TuWanDataTypeGuide) [params setObject:@"guide" forKey:@"type"];
+            kSetDtId(@"83623,31528,31537,31538,57067,91821", params);
+            kRemoveClassMore(params);
             break;
         case TuWanDataTypeCOS:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&class=cos&mod=cos&classmore=indexpic&dtid=0&appid=1&%@", kAppver];
+            kSetClass(@"cos", params);
+            kSetDtId(@"0", params);
+            kSetMod(@"cos", params);
             break;
         case TuWanDataTypeHuanHua:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&class=heronews&mod=幻化&appid=1&%@", kAppver];
+            kRemoveClassMore(params);
+            kSetClass(@"heronews", params);
+            kSetMod(@"幻化", params);
             break;
         case TuWanDataTypeLuShi:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&dtid=31528&classmore=indexpic&appid=1&%@", kAppver];
+            kSetDtId(@"31528", params);
             break;
         case TuWanDataTypeMeiNv:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&class=heronews&mod=美女&classmore=indexpic&typechild=cos1&appid=1&%@", kAppver];
+            kSetMod(@"美女", params);
+            kSetClass(@"heronews", params);
+            [params setObject:@"cos1" forKey:@"typechild"];
             break;
         case TuWanDataTypeMoShou:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&dtid=31537&classmore=indexpic&appid=1&%@&start=%@", kAppver, start];
-            break;
-        case TuWanDataTypePicture:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&type=pic&dtid=83623,31528,31537,31538,57067,91821&appid=1&%@", kAppver];
+            kSetDtId(@"31537", params);
             break;
         case TuWanDataTypeQuWen:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&dtid=0&class=heronews&mod=趣闻&classmore=indexpic&appid=1&%@", kAppver];
+            kSetMod(@"趣闻", params);
+            kSetClass(@"heronews", params);
+            kSetDtId(@"0", params);
             break;
         case TuWanDataTypeShouWang:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&dtid=57067&appid=1&%@", kAppver];
-            break;
-        case TuWanDataTypeVideo:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&type=video&dtid=83623,31528,31537,31538,57067,91821&appid=1&%@", kAppver];
+            kRemoveClassMore(params);
+            kSetDtId(@"57067", params);
             break;
         case TuWanDataTypeXingJi2:
-            path = [NSString stringWithFormat:@"http://cache.tuwan.com/app/?appid=1&dtid=91821&appid=1&%@", kAppver];
+            kRemoveClassMore(params);
+            kSetDtId(@"91821", params);
             break;
         default:
+            NSAssert1(NO, @"%s:type类型不正确", __func__);
             break;
     }
-    NSString *lastPath = [self percentPathWithPath:path params:nil];
+    NSString *lastPath = [self percentPathWithPath:kTuWanPath params:params];
     return [TuWanNetManager GET:lastPath parameters:nil completionHandler:^(id responseObj, NSError *error) {
         completionHandle([TuWanModel objectWithKeyValues:responseObj], error);
     }];

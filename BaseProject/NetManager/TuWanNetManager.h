@@ -35,11 +35,11 @@ typedef NS_ENUM(NSUInteger, TuWanDataType) {
  *  获取兔玩相关的信息
  *
  *  @param type             获取界面的类型，这是一个枚举值
- *  @param start            从第start条信息开始加载
+ *  @param start            当前资讯起始索引值，最小为0。 eg 0,11,22,33,44...
  *  @param completionHandle 一个block，用于返回从服务器返回的数据
  *
  *  @return 返回当前请求的任务
  */
-+ (id)getTuWanDataType:(TuWanDataType)type start:(NSNumber *)start CompletionHandle:(void(^)(TuWanModel *model, NSError *error))completionHandle;
++ (id)getTuWanDataType:(TuWanDataType)type start:(NSInteger)start CompletionHandle:(void(^)(TuWanModel *model, NSError *error))completionHandle;
 
 @end
